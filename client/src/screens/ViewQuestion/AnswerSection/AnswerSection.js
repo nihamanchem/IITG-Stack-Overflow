@@ -1,6 +1,6 @@
 import { React, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Spinner from "../../../components/Spinner/Spinner";
+import Spinner from "../../../components/Spinner";
 import { answerQuestion } from "../../../api";
 import { setAlert } from "../../../redux/actions";
 import { getAnswers } from "../../../redux/actions";

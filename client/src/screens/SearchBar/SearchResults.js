@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import SearchItem from "./SearchItem";
-import Spinner from "../../components/Spinner/Spinner";
+import Spinner from "../../components/Spinner";
 import { NavLink } from "react-router-dom";
 import Nothing from "../../assets/svg/Nothing";
 

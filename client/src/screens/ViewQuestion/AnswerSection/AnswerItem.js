@@ -174,7 +174,7 @@ const AnswerItem = (props) => {
                   <img
                     alt="img"
                     className="w-8 h-8 border border-gray-300"
-                    src={`https://avatars.dicebear.com/api/jdenticon/${answer.author.name}.svg`}
+                    src={`https://secure.gravatar.com/avatar/${answer.author.name}?s=164&d=identicon`}
                   ></img>
                   <Link
                     to={`/users/${answer.author._id}`}

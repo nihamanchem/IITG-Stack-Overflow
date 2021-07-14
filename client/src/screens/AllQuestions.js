@@ -1,17 +1,15 @@
 import React from "react";
-import LeftSideBar from "../../components/LeftSideBar/LeftSideBar";
-import Alert from "../../components/Alert/Alert";
-import QuestionDisplay from "../../components/Question/QuestionDisplay";
-import RightSideBar from "../../components/RightSideBar/RightSideBar";
+import Alert from "../components/Alert";
+import LeftSideBar from "../components/LeftSideBar";
+import RightSideBar from "../components/RightSideBar/RightSideBar";
+import QuestionDisplay from "../components/Question/QuestionDisplay";
 import { useState } from "react";
 
-const AllQuestionsScreen = () => {
-  // let tagsArray = [];
+const AllQuestions = () => {
   window.scrollTo(0,0);
   const [tagsArray, setTagsArray] = useState([]);
-  const getTags = (tags) => {
-    setTagsArray(tags);
-  };
+  const getTags = (tags) => { setTagsArray(tags); };
+  
   return (
     <React.Fragment>
       <div className="min-h-screen bg-white">
@@ -25,4 +23,5 @@ const AllQuestionsScreen = () => {
     </React.Fragment>
   );
 };
-export default AllQuestionsScreen;
+
+export default AllQuestions;

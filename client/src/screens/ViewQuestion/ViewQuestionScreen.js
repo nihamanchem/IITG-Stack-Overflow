@@ -1,6 +1,6 @@
 import React from "react";
-import LeftSideBar from "../../components/LeftSideBar/LeftSideBar";
-import Alert from "../../components/Alert/Alert";
+import LeftSideBar from "../../components/LeftSideBar";
+import Alert from "../../components/Alert";
 import { useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import QuestionSection from "./QuestionSection/QuestionSection"

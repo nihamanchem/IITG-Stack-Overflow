@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { setAlert } from "../../../redux/actions";
 import { useDispatch } from "react-redux";
-import { updateAnswer } from "../../../api/index";
+import { updateAnswer } from "../../../api";
 
 export const EditAnswer = (props) => {
   const answer = props.answer;

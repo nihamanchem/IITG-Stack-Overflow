@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { getUser } from "../../api/index";
-import LeftSideBar from "../../components/LeftSideBar/LeftSideBar";
+import { getUser } from "../../api";
+import LeftSideBar from "../../components/LeftSideBar";
 import moment from "moment";
-import Spinner from "../../components/Spinner/Spinner";
+import Spinner from "../../components/Spinner";
 import QuestionItem from "./QuestionItem";
 import AnswerItem from "./AnswerItem";
 import EditProfileCard from "./EditProfileCard";
@@ -53,7 +53,7 @@ const UserProfileScreen = () => {
               >
                 <img
                   className="w-40 h-40 block border border-gray-300 bg-white"
-                  src={`https://avatars.dicebear.com/api/jdenticon/${(currentUser && currentUser._id===user._id)?currentUser.name:user.name}.svg`}
+                  src={`https://secure.gravatar.com/avatar/${(currentUser && currentUser._id===user._id)?currentUser.name:user.name}?s=164&d=identicon`}
                   alt="profile"
                 ></img>
                 <span className="text-gray-600 text-lg font-bold mt-0.5">

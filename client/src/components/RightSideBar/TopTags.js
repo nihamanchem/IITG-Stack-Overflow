@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getTopTags } from "../../api";
 
-const TopSevenTags = () => {
+const TopTags = () => {
   const [topTags, setTopTags] = useState([]);
 
   useEffect(() => {
@@ -31,4 +31,4 @@ const TopSevenTags = () => {
     </div>
   );
 };
-export default TopSevenTags;
+export default TopTags;

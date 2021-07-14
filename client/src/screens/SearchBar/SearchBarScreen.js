@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import SearchResults from "./SearchResults";
-import LeftSideBar from "../../components/LeftSideBar/LeftSideBar"
+import LeftSideBar from "../../components/LeftSideBar"
 
 const SearchBarScreen = () => {
   window.scrollTo(0, 0);

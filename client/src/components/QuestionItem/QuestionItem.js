@@ -85,7 +85,7 @@ const QuestionItem = (props) => {
                   {moment(question.createdAt).fromNow()}
                 </span>
                 <div className="flex flex-row">
-                  <img alt = "img" className="w-8 h-8 border border-gray-300" src={`https://avatars.dicebear.com/api/jdenticon/${question.author.name}.svg`}></img>
+                  <img alt = "img" className="w-8 h-8 border border-gray-300" src={`https://secure.gravatar.com/avatar/${question.author.name}?s=164&d=identicon`}></img>
                 <Link to={`/users/${question.author._id}`} className="text-right pl-1 text-blue-600 hover:text-blue-400">{question.author.name}</Link>
                 </div>
               </div>

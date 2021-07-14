@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { updateQuestion } from "../../../api/index";
+import { updateQuestion } from "../../../api";
 import { setAlert } from "../../../redux/actions";
 
 const EditQuestion = (props) => {

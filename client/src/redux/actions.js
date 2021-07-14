@@ -9,7 +9,7 @@ import {
   getQuestionsTags, 
   getTopQuestions,
   getAllAnswers, 
-  deleteAnswer } from "../api/index";
+  deleteAnswer } from "../api";
 
 export const setAlert = ({ message, status }, timeout = 2500) => (dispatch) => {
   dispatch({ type: "SET_ALERT", payload: { message, status } });
