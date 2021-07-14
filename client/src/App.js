@@ -5,18 +5,16 @@ import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 
 import Navbar from "./components/Navbar";
-
-//SCREENS
-import Register from "./screens/Register";
-import Login from "./screens/Login";
-import Home from "./screens/Home";
-import PostQuestion from "./screens/PostQuestion";
-import ViewQuestionScreen from "./screens/ViewQuestion/ViewQuestionScreen";
-import NotFound from "./screens/NotFound"
-import AllQuestions from "./screens/AllQuestions";
-import Users from "./screens/Users";
-import UserProfileScreen from "./screens/UserProfile/UserProfileScreen"
-import SearchBarScreen from "./screens/SearchBar/SearchBarScreen";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import Home from "./pages/Home";
+import PostQuestion from "./pages/PostQuestion";
+import ViewQuestionScreen from "./pages/ViewQuestion/ViewQuestionScreen";
+import NotFound from "./pages/NotFound"
+import AllQuestions from "./pages/AllQuestions";
+import Users from "./pages/Users";
+import UserProfileScreen from "./pages/UserProfile/UserProfileScreen"
+import SearchBarScreen from "./pages/SearchBar/SearchBarScreen";
 import { loadUser } from "./redux/actions";
 
 const App = () => {
