@@ -23,9 +23,9 @@ const SearchResults = (props) => {
   return (
     <>
       {!localLoading && visibleQues && (
-        <div className="flex flex-col mt-16 mb-10 w-screen">
+        <div className="flex flex-col mt-16 mb-10 w-screen bg-gray-800">
           <div className="flex justify-between items-center py-4 px-8">
-            <h1 className="text-2xl font-semibold">Search Results</h1>
+            <h1 className="text-2xl font-semibold" style={{color:'white'}}>Search Results</h1>
             <NavLink to="/question/ask">
               <button className="flex items-center p-2 m-1 bg-blue-500 border-2 border-blue-700 rounded text-white hover:bg-blue-600 h-10">
                 Ask Question

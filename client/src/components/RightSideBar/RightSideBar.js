@@ -9,7 +9,7 @@ const RightSideBar = (props) => {
   return (
     <>
       {!loading && (
-        <div className="flex flex-col w-1/3 ml-10 mr-10 mt-16 ">
+        <div className="flex flex-col w-1/3 ml-10 mr-10 mt-16 bg-gray-800">
           <WatchedTags getTags={props.getTags} />
           <TopTags />
         </div>

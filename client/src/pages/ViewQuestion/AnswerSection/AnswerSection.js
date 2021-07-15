@@ -57,8 +57,8 @@ const AnswerSection = (props) => {
     <div>
       {(loading || loadingQuestion) && <Spinner />}
       {!loading && !loadingQuestion && answers && (
-        <div className="pl-2">
-          <div className=" text-left ml-4 mt-4 text-xl">
+        <div className="pl-2 bg-gray-800">
+          <div className=" text-left ml-4 mt-4 text-xl text-white">
             {answers.length}
             {answers.length===1?  " Answer": " Answers"} 
           </div>
@@ -66,7 +66,7 @@ const AnswerSection = (props) => {
             <AnswerItem key={index} answer={answer} user={user} question_id={props.question_id}/>
           ))}
 
-          <div className="text-left text-xl pl-8 p-4">
+          <div className="text-left text-xl pl-8 p-4 text-white">
             Your answer
           </div>
           <textarea

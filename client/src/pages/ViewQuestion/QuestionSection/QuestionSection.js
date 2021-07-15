@@ -97,11 +97,11 @@ const QuestionSection = (props) => {
   return (
     <>
       {!loading && !loadingAnswers && question && (
-        <div className="mt-16 flex flex-col mb-6">
+        <div className="mt-16 flex flex-col mb-6 bg-gray-800">
           {!clicked && (
             <>
               <div className="border-b pb-6 border-gray-300">
-                <div className="text-2xl py-2 text-left px-2">
+                <div className="text-2xl py-2 text-left px-2 text-white">
                   {question.title}
                 </div>
                 <div className="text-xs text-right text-gray-500">
@@ -151,7 +151,7 @@ const QuestionSection = (props) => {
                     </button>
                   )}
                 </div>
-                <div className="flex flex-col justify-between w-full text-left pl-2 mb-5">
+                <div className="flex flex-col justify-between w-full text-left pl-2 mb-5 text-white">
                   {!clicked && (
                     <div className="pb-20 whitespace-pre-line">
                       <ReactMarkdown
@@ -178,12 +178,12 @@ const QuestionSection = (props) => {
                   <div className="pt-2">
                     {user && question.author._id === user._id && (
                       <button onClick={editClickHandler}>
-                        <span className="flex items-center p-2 m-1 mt-3 border-2 border-blue-700 rounded text-black">edit</span>
+                        <span className="flex items-center p-2 m-1 mt-3 border-2 border-blue-700 rounded text-white">edit</span>
                       </button>
                     )}
                     {user && question.author._id === user._id && (
                       <button onClick={questionDeleteHandler}>
-                        <span className="flex items-center p-2 m-1 mt-3 border-2 border-red-700 rounded text-black">delete</span>
+                        <span className="flex items-center p-2 m-1 mt-3 border-2 border-red-700 rounded text-white">delete</span>
                       </button>
                     )}
                   </div>
