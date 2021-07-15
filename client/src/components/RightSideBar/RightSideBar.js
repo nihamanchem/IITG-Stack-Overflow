@@ -1,5 +1,5 @@
 import React from "react";
-import TopSevenTags from "./TopSevenTags";
+import TopTags from "./TopTags";
 import WatchedTags from "./WatchedTags";
 import { useSelector } from "react-redux";
 
@@ -11,7 +11,7 @@ const RightSideBar = (props) => {
       {!loading && (
         <div className="flex flex-col w-1/3 ml-10 mr-10 mt-16 ">
           <WatchedTags getTags={props.getTags} />
-          <TopSevenTags />
+          <TopTags />
         </div>
       )}
     </>

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import QuestionItem from "../QuestionItem/QuestionItem";
-import Spinner from "../Spinner/Spinner";
+import Spinner from "../Spinner";
 import { NavLink } from "react-router-dom";
 import { getQuestionsAction, getTopQuestionsAction } from "../../redux/actions";
 import Nothing from "../../assets/svg/Nothing";

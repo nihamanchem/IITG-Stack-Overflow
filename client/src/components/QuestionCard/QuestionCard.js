@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setAlert } from "../../redux/actions";
-import Alert from "../Alert/Alert";
+import Alert from "../Alert";
 import { useHistory } from "react-router-dom";
 import { createQuestionAction } from "../../redux/actions";
 
