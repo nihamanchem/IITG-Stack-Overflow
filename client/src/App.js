@@ -23,7 +23,7 @@ const App = () => {
   useEffect(() => { dispatch(loadUser()); }, [dispatch]);
 
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor: 'rgb(40,40,40)'}}>
       <BrowserRouter>
         <Navbar />
         <Switch>

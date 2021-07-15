@@ -97,7 +97,7 @@ const QuestionSection = (props) => {
   return (
     <>
       {!loading && !loadingAnswers && question && (
-        <div className="mt-16 flex flex-col mb-6 bg-gray-800">
+        <div className="mt-16 flex flex-col mb-6" style={{ backgroundColor: "rgb(40, 40, 40)"}}>
           {!clicked && (
             <>
               <div className="border-b pb-6 border-gray-300">
@@ -105,7 +105,6 @@ const QuestionSection = (props) => {
                   {question.title}
                 </div>
                 <div className="text-xs text-right text-gray-500">
-                  Asked &nbsp;
                   {moment(question.createdAt).format("lll")}
                 </div>
               </div>
@@ -129,7 +128,7 @@ const QuestionSection = (props) => {
                     </button>
                   )}
 
-                  <span>
+                  <span style={{ color: "white"}}>
                     {question.upvotes.length - question.downvotes.length}
                   </span>
 
@@ -203,7 +202,7 @@ const QuestionSection = (props) => {
                           ></img>
                           <Link
                             to={`/users/${question.author._id}`}
-                            className="text-right pl-1 text-blue-600 hover:text-blue-400"
+                            className="text-right pl-1 text-blue-400 hover:text-blue-200"
                           >
                             {question.author.name}
                           </Link>

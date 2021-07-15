@@ -12,9 +12,9 @@ const QuestionItem = (props) => {
   return (
     <>
       {!loading && (
-        <div className=" p-3 flex bg-gray-800 border-r border-t border-b border-gray-200 text-left">
+        <div className=" p-3 flex border-r border-t border-b border-gray-200 text-left" style={{ backgroundColor: "#202124" }}>
           <div className="flex flex-col mr-2 items-center">
-            <span className=" flex flex-col text-xs text-center py-2 px-5 text-gray-500">
+            <span className=" flex flex-col text-xs text-center py-2 px-5 text-gray-200">
               <span className="text-sm">
                 {question &&
                   question.upvotes.length - question.downvotes.length}
@@ -22,7 +22,7 @@ const QuestionItem = (props) => {
               {Math.abs(question.upvotes.length - question.downvotes.length) === 1 ? "vote" : "votes"}
             </span>
 
-            <span className="flex flex-col text-center py-2 px-5 text-xs text-gray-500">
+            <span className="flex flex-col text-center py-2 px-5 text-xs text-gray-200">
               <span className="text-sm">{question.answers.length}</span>{" "}
               {question.answers.length === 1 ? "answer" : "answers"}
             </span>
@@ -86,7 +86,7 @@ const QuestionItem = (props) => {
                 </span>
                 <div className="flex flex-row">
                   <img alt = "img" className="w-8 h-8 border border-gray-300" src={`https://secure.gravatar.com/avatar/${question.author.name}?s=164&d=identicon`}></img>
-                <Link to={`/users/${question.author._id}`} className="text-right pl-1 text-blue-600 hover:text-blue-400">{question.author.name}</Link>
+                <Link to={`/users/${question.author._id}`} className="text-right pl-1 text-blue-400 hover:text-blue-200">{question.author.name}</Link>
                 </div>
               </div>
             </div>

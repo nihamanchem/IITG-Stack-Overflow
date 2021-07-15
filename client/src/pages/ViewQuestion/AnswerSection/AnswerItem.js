@@ -92,7 +92,7 @@ const AnswerItem = (props) => {
   };
 
   return (
-    <div className="mt-2 flex flex-col w-full mb-6 border-b border-gray-300 bg-gray-800">
+    <div className="mt-2 flex flex-col w-full mb-6 border-b border-gray-300" style={{ backgroundColor: "rgb(40, 40, 40)"}}>
       {!clicked && (
         <div className="flex pl-4 pt-4">
           <div className="flex flex-col items-center pt-2 ">
@@ -114,7 +114,7 @@ const AnswerItem = (props) => {
               </button>
             )}
 
-            <span>{answer.upvotes.length - answer.downvotes.length}</span>
+            <span style={{ color: "white"}}>{answer.upvotes.length - answer.downvotes.length}</span>
 
             {user && answer.downvotes.includes(user._id) ? (
               <button
@@ -171,7 +171,7 @@ const AnswerItem = (props) => {
                   ></img>
                   <Link
                     to={`/users/${answer.author._id}`}
-                    className="text-right pl-1 text-blue-600 hover:text-blue-400"
+                    className="text-right pl-1 text-blue-400 hover:text-blue-200"
                   >
                     {answer.author.name}
                   </Link>

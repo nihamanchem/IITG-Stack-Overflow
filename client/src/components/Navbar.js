@@ -31,7 +31,7 @@ const Navbar = () => {
     <div className="flex items-center z-10 justify-between w-screen py-1 px-7 shadow-md fixed border-t-4 border-yellow-500" style={{ backgroundColor: "#202124" }}>
       <div className="hover:gray-300 ml-24">
         <NavLink to="/">
-        <img src={companyLogo} alt="logo" style={{width:250, height:50}}/>
+        <img src={companyLogo} alt="logo" style={{width:200, height:50}}/>
           </NavLink>
       </div>
       <div className="flex items-center w-1/2 ">

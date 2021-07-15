@@ -56,7 +56,7 @@ const SearchItem = (props) => {
                 ></img>
                 <Link
                   to={`/users/${question.author._id}`}
-                  className="text-right pl-1 text-blue-600 hover:text-blue-400"
+                  className="text-right pl-1 text-blue-400 hover:text-blue-200"
                 >
                   {question.author.name}
                 </Link>

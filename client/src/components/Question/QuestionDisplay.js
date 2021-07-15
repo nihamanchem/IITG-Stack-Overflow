@@ -23,7 +23,7 @@ const QuestionDisplay = (props) => {
     <>
       {loading && <Spinner />}
       {!loading && questions && (
-        <div className="flex flex-col mt-16 mb-10 w-screen bg-gray-800">
+        <div className="flex flex-col mt-16 mb-10 w-screen" style={{ backgroundColor: "rgb(50,50,50)"}} >
           <div className="flex justify-between items-center py-4 px-8">
             <h1 className="text-2xl font-semibold text-white">{props.title}</h1>
             <NavLink to="/question/ask">

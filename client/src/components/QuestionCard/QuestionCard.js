@@ -52,7 +52,7 @@ const QuestionCard = () => {
   return (
     <div className="w-5/6 h-screen">
       <Alert />
-      <div className="bg-grey-800 w-full rounded shadow-md border border-gray-300">
+      <div className="w-full rounded shadow-md border border-gray-300" style={{ backgroundColor: "black"}}>
         <form className="flex flex-col p-4">
           <label className="text-left ml-2 font-medium text-white">Title</label>
           <div className="mx-2">

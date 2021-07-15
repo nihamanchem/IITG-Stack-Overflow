@@ -10,10 +10,10 @@ const UserCard = (props) => {
       <img className="w-16 h-16 border border-gray-300"
       src={`https://secure.gravatar.com/avatar/${user.name}?s=164&d=identicon`} alt = "profile"></img>
       <div className="flex flex-col text-xs  ml-3">
-        <Link to={`/users/${user._id}`} className="text-left text-sm text-blue-600 hover:text-blue-400">{user.name}</Link>
-        <span className="text-gray-500">created {moment(user.createdAt).fromNow()}</span>
-        <span className="text-gray-500">{user.questions.length} {user.questions.length===1?<span >Question</span>:<span > Questions </span>} </span>
-        <span className="text-gray-500">{user.answers.length} {user.answers.length===1?<span >Answer</span>:<span >Answers</span>}</span>
+        <Link to={`/users/${user._id}`} className="text-left text-sm text-blue-400 hover:text-blue-200">{user.name}</Link>
+        <span className="text-gray-400">created {moment(user.createdAt).fromNow()}</span>
+        <span className="text-gray-300">{user.questions.length} {user.questions.length===1?<span >Question</span>:<span > Questions </span>} </span>
+        <span className="text-gray-300">{user.answers.length} {user.answers.length===1?<span >Answer</span>:<span >Answers</span>}</span>
       </div>
     </div>
   );

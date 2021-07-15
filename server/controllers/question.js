@@ -203,31 +203,31 @@ module.exports.vote = async (req, res) => {
       newQuestion = await Question.findByIdAndUpdate(question_id, {
         upvotes: foundQuestion.upvotes.filter((user_id) => user_id.toString() !== req.user._id.toString()),
       });
-      message = "Your upvote has been removed";
+      message = "upvote removed";
       votes -= 1;
     } 
     else if (vote && !upvoted && !downvoted) {
       newQuestion = await Question.findByIdAndUpdate(question_id, {
         upvotes: [...foundQuestion.upvotes, req.user._id],
       });
-      message = "Your upvote has been added";
+      message = "upvote added";
       votes += 1;
     } 
     else if (!vote && downvoted) {
       newQuestion = await Question.findByIdAndUpdate(question_id, {
         downvotes: foundQuestion.downvotes.filter((user_id) => user_id.toString() !== req.user._id.toString()),
       });
-      message = "Your downvote has been removed";
+      message = "downvote removed";
       votes += 1;
     } 
     else if (!vote && !downvoted && !upvoted) {
       newQuestion = await Question.findByIdAndUpdate(question_id, {
         downvotes: [...foundQuestion.downvotes, req.user._id],
       });
-      message = "Your downvote has been added";
+      message = "downvote added";
       votes -= 1;
     } 
-    else message = "Remove your previous vote";
+    else message = "remove previous vote";
     
     res.status(200).json({ message, votes });
   } 
