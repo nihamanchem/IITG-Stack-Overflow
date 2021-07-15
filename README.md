@@ -14,7 +14,7 @@ A question and answer to learn, share and discuss about problems
   * npm start
 
 # Tech Stack
-* React
-* Node.js 
+* React.js
+* Node.js and Express
 * MongoDB
 
