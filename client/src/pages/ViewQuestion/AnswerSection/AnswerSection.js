@@ -57,7 +57,7 @@ const AnswerSection = (props) => {
     <div>
       {(loading || loadingQuestion) && <Spinner />}
       {!loading && !loadingQuestion && answers && (
-        <div className="pl-2 bg-gray-800">
+        <div className="pl-2" style={{ backgroundColor: "rgb(40, 40, 40)"}}>
           <div className=" text-left ml-4 mt-4 text-xl text-white">
             {answers.length}
             {answers.length===1?  " Answer": " Answers"} 

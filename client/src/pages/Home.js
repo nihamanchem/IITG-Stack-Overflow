@@ -12,10 +12,10 @@ const Home = () => {
   
   return (
     <React.Fragment>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen " style={{ backgroundColor: "rgb(50, 50, 50)"}}>
       <Alert />
       <LeftSideBar />
-      <div className="bg-white flex flex-row pl-72">
+      <div className="flex flex-row pl-72" style={{ backgroundColor: "rgb(50, 50, 50)"}}>
         <QuestionDisplay tagsArray={tagsArray}  title="Top Questions"/>
         <RightSideBar getTags={getTags} />
       </div>

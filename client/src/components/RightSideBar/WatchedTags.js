@@ -37,7 +37,7 @@ const WatchedTags = (props) => {
 
   return (
     <div className="mt-3 rounded-md shadow-md border border-gray-300">
-      <div className="h-11 pl-4 text-gray-600 text-sm font-semibold bg-gray-100 border-b border-gray-300  rounded-t-md  flex items-center text-md">
+      <div className="h-11 pl-4 text-white text-sm font-semibold border-b border-gray-300  rounded-t-md  flex items-center text-md" style={{ backgroundColor: "#202124"}}>
         Watched Tags
       </div>
       {watchClick ? (

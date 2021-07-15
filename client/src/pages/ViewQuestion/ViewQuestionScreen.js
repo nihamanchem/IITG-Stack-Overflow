@@ -19,7 +19,7 @@ const ViewQuestionScreen = () => {
         <Alert />
         <LeftSideBar/>
         
-        <div className="bg-white flex flex-row pl-72 min-h-screen">
+        <div className="flex flex-row pl-72 min-h-screen" style={{ backgroundColor: "rgb(50, 50, 50)"}}>
           <div className="flex flex-col w-3/4">
             <QuestionSection question_id={location.pathname.split('/')[2]} />
             <AnswerSection question_id = {location.pathname.split('/')[2]} />

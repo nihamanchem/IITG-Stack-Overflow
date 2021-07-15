@@ -23,11 +23,11 @@ const Users = () => {
   }, [dispatch]);
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="min-h-screen" style={{ backgroundColor: "rgb(50, 50, 50)"}}>
       <div className="flex flex-row">
         <LeftSideBar />
         <div className="mt-24 pl-72 text-left w-screen">
-          <div className="text-3xl pl-5 mb-10"> Users </div>
+          <div className="text-3xl text-white pl-5 mb-10"> Users </div>
           <div className="items-center">
             <input type="search"
               className="placeholder-gray-500 w-52 h-10 ml-4 items-center mb-8 border-2 border-gray-200 p-3 rounded focus:border-blue-300 outline-none"

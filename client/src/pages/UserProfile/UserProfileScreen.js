@@ -40,7 +40,7 @@ const UserProfileScreen = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen w-full flex flex-row">
+    <div className="min-h-screen w-full flex flex-row" style={{ backgroundColor: "rgb(50, 50, 50)"}}>
       <LeftSideBar />
       <div className="m-8 mt-20 w-full pl-72">
         {(!user || !user.name) && <Spinner />}
@@ -56,12 +56,12 @@ const UserProfileScreen = () => {
                   src={`https://secure.gravatar.com/avatar/${(currentUser && currentUser._id===user._id)?currentUser.name:user.name}?s=164&d=identicon`}
                   alt="profile"
                 ></img>
-                <span className="text-gray-600 text-lg font-bold mt-0.5">
+                <span className="text-gray-200 text-lg font-bold mt-0.5">
                   {(currentUser && currentUser._id===user._id)?currentUser.name:user.name}
                 </span>
                 <div>
-                  <span className="text-xs text-gray-500"> Joined: </span>
-                  <span className="text-gray-600 text-md font-semibold ">
+                  <span className="text-xs text-gray-300"> Joined: </span>
+                  <span className="text-gray-400 text-md font-semibold ">
                     {moment(user.createdAt).fromNow()}
                   </span>
                 </div>
@@ -88,11 +88,11 @@ const UserProfileScreen = () => {
               <div className="flex ml-2 pl-2 flex-col w-full ">
                 <div className="flex flex-row w-full justify-between pb-1.5 border-b border-gray-300">
                   {radio ? (
-                    <div className="text-gray-600 text-lg font-bold mt-1.5">
+                    <div className="text-white text-lg font-bold mt-1.5">
                       Top Questions
                     </div>
                   ) : (
-                    <div className="text-gray-600 text-lg font-bold mt-1.5">
+                    <div className="text-white text-lg font-bold mt-1.5">
                       Top Answers
                     </div>
                   )}

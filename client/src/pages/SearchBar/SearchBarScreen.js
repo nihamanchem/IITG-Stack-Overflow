@@ -10,7 +10,7 @@ const SearchBarScreen = () => {
 
   return (
     <React.Fragment>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen" style={{ backgroundColor: "rgb(50, 50, 50)"}}>
         <LeftSideBar />
         <div className="flex flex-row pl-72">
           <SearchResults url={url} />

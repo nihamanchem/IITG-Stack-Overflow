@@ -49,25 +49,25 @@ const EditProfileCard = (props) => {
 		<div className="flex flex-col items-start ml-32 w-full">
 			<Alert />
 			<div className="flex justify-between mb-6 items-center w-1/2">
-				<label className="text-left font-medium font-sans BlinkMacSystemFont">Username</label>
+				<label className="text-left text-white font-medium font-sans BlinkMacSystemFont">Username</label>
 				<input id="displayName" type="text" value={name} required
 					className="p-2 rounded border-2 focus:border-blue-300 outline-none"
 					onChange={setNameChange}/>
 			</div>
 			<div className="flex justify-between mb-6 items-center w-1/2">
-				<label className="text-left font-medium font-sans BlinkMacSystemFont">Password</label>
+				<label className="text-left text-white font-medium font-sans BlinkMacSystemFont">Password</label>
 				<input placeholder="Required" type="password" required
 					className="p-2 rounded border-2 focus:border-blue-300 outline-none"
 					onChange={setPasswordChange}/>
 			</div>
 			<div className="flex justify-between mb-6 items-center w-1/2">
-				<label className="text-left font-medium font-sans BlinkMacSystemFont">New Password</label>
+				<label className="text-left text-white font-medium font-sans BlinkMacSystemFont">New Password</label>
 				<input placeholder="Keep blank for no change" type="password"
 					className="p-2 rounded border-2 focus:border-blue-300 outline-none"
 					onChange={setNewPasswordChange}/>
 			</div>
 			<div className="flex justify-between mb-6 items-center w-1/2">
-				<label className="text-left font-medium font-sans BlinkMacSystemFont">Confirm New Password</label>
+				<label className="text-left text-white font-medium font-sans BlinkMacSystemFont">Confirm New Password</label>
 				<input placeholder="Keep blank for no change" type="password"
 					className="p-2 rounded border-2 focus:border-blue-300 outline-none"
 					onChange={setConfirmPasswordChange}/>
