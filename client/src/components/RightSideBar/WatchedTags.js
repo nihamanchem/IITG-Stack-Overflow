@@ -4,6 +4,7 @@ import TagSearch from "../../assets/svg/TagSearch";
 import { getQuestionsByTags } from "../../redux/actions";
 import { useDispatch } from "react-redux";
 import { useLocation } from "react-router";
+
 const WatchedTags = (props) => {
   const [tags, setTags] = useState("");
   const [selectedTags, setSelectedTags] = useState([]);
@@ -37,7 +38,7 @@ const WatchedTags = (props) => {
 
   return (
     <div className="mt-3 rounded-md shadow-md border border-gray-300">
-      <div className="h-11 pl-4 text-gray-600 text-sm font-semibold bg-gray-100 border-b border-gray-300  rounded-t-md  flex items-center text-md">
+      <div className="bg-gray-800 h-11 pl-4 text-white text-sm font-semibold bg-gray-100 border-b border-gray-300  rounded-t-md  flex items-center text-md">
         Watched Tags
       </div>
       {watchClick ? (
@@ -86,7 +87,7 @@ const WatchedTags = (props) => {
         <div className="flex flex-col items-center mt-5 ">
           <TagSearch />
           <div className="text-xs text-gray-400 mt-1">
-            Watch tags to curate your list of questions.
+            Watch tags to filter your list of questions.
           </div>
           <button
             className=" my-3 flex justify-center items-center p-2 w-32 m-1 bg-blue-200 border border-blue-600 rounded text-blue-700 hover:bg-blue-300"

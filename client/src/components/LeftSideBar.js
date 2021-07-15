@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const LeftSideBar = (props) => {
   return (
-    <div className="w-72 fixed z-0 border-gray-300 border-r h-screen text-right pl-32 pt-20 bg-gray-800">
+    <div className="w-72 fixed z-0 border-gray-300 border-r h-screen text-right pl-32 pt-20" style={{ backgroundColor: "#202124" }}>
       <div className="my-2">
         <NavLink exact to="/" className="text-gray-500 flex pl-2 py-2 items-center text-sm"
         activeClassName="border-red-400 border-r-4 text-gray-800 bg-gray-700 font-bold">Home</NavLink>

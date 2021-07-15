@@ -16,7 +16,7 @@ const TopTags = () => {
 
   return (
     <div className="my-4 rounded border border-gray-300 shadow-md">
-      <h1 className="h-11 pl-4 text-gray-600 text-sm font-semibold bg-gray-100 border-b border-gray-300  rounded-t-md  flex items-center text-md  ">
+      <h1 className="bg-gray-800 h-11 pl-4 text-white text-sm font-semibold bg-gray-100 border-b border-gray-300  rounded-t-md  flex items-center text-md  ">
         Top Tags
       </h1>
       <div className=" flex-wrap flex pl-1 ">
