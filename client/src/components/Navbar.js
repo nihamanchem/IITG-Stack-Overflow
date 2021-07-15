@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import { NavLink, useHistory, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../redux/actions";
-import companyLogo from '../assets/logo.jpg';
+import companyLogo from '../assets/logo.png';
 const Navbar = () => {
   const { isAuthenticated, user } = useSelector((state) => state.auth);
   const { loading } = useSelector((state) => state.loading);
@@ -31,8 +31,7 @@ const Navbar = () => {
     <div className="flex items-center z-10 justify-between w-screen py-1 px-7 shadow-md fixed border-t-4 border-yellow-500" style={{ backgroundColor: "#202124" }}>
       <div className="hover:gray-300 ml-24">
         <NavLink to="/">
-        <img src={companyLogo} alt="logo" style={{width:300, height:100}}/>
-          {/* <Logo /> */}
+        <img src={companyLogo} alt="logo" style={{width:250, height:50}}/>
           </NavLink>
       </div>
       <div className="flex items-center w-1/2 ">

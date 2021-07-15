@@ -1,5 +1,5 @@
 const axios = require("axios");
-const API = axios.create({ baseURL: "http://localhost:4000/api" });
+const API = axios.create({ baseURL: "http://localhost:3030/api" });
 
 API.interceptors.request.use(function (config) {
 	config.headers.authorization = `Bearer ${localStorage.token}`

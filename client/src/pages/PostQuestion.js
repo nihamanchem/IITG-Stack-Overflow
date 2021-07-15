@@ -23,7 +23,7 @@ const PostQuestion = () => {
       {!loading && isAuthenticated &&
         <div className="pl-40 min-h-screen">
         <div className="flex pt-4">
-          <div className="pt-28 pb-12 text-2xl text-left mr-96">Ask a question</div>
+          <div className="pt-28 pb-12 text-2xl text-left mr-96 text-white">Ask a question</div>
         </div>
         <div className="flex justify-start"><QuestionCard /></div>
         </div>

@@ -22,7 +22,7 @@ const Register = () => {
         <div className="flex flex-col justify-center items-center h-screen">
         <a href="/"><Logo /></a>
         <Card type="Sign up" />
-        <span>Already have an account?<Link to="/login"><span className="text-blue-500"> Login</span></Link></span>
+        <span style={{color:'white'}}>Already have an account?<Link to="/login"><span className="text-blue-500"> Login</span></Link></span>
         </div>
       }
     </React.Fragment>

@@ -12,7 +12,7 @@ const SearchBarScreen = () => {
     <React.Fragment>
       <div className="min-h-screen bg-white">
         <LeftSideBar />
-        <div className="bg-white flex flex-row pl-72">
+        <div className="flex flex-row pl-72">
           <SearchResults url={url} />
         </div>
       </div>

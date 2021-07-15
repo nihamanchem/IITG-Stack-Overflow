@@ -6,7 +6,7 @@ const SearchItem = (props) => {
   const question = props.data;
   return (
     <>
-      <div className=" p-3 flex bg-white border-r border-t border-b border-gray-200 text-left">
+      <div className=" p-3 flex bg-gray-800 border-r border-t border-b border-white-200 text-left">
         <div className="flex flex-col mr-2 items-center">
           <span className=" flex flex-col text-xs text-center py-2 px-5 text-gray-500">
             <span className="text-sm">
@@ -52,7 +52,7 @@ const SearchItem = (props) => {
                 <img
                   alt="img"
                   className="w-8 h-8 border border-gray-300"
-                  src={`https://avatars.dicebear.com/api/jdenticon/${question.author.name}.svg`}
+                  src={`https://secure.gravatar.com/avatar/${question.author.name}?s=164&d=identicon`}
                 ></img>
                 <Link
                   to={`/users/${question.author._id}`}

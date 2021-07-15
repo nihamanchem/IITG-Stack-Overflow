@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { UpArrowInactive, UpArrowActive } from "../../../assets/svg/UpArrow";
-import {
-  DownArrowInactive,
-  DownArrowActive,
-} from "../../../assets/svg/DownArrow";
+import { DownArrowInactive, DownArrowActive } from "../../../assets/svg/DownArrow";
 import moment from "moment";
 import {Link} from "react-router-dom"
 import { EditAnswer } from "./EditAnswer";
@@ -14,10 +11,6 @@ import { useDispatch } from "react-redux";
 import { setAlert } from "../../../redux/actions";
 import { deleteAnswerAction, getAnswers } from "../../../redux/actions";
 
-// import ReactMarkdown from "react-markdown";
-
-// REMOVE IF ERROR:
-/* Use `…/dist/cjs/…` if you’re not in ESM! */
 const components = {
   code({ node, inline, className, children, ...props }) {
     const match = /language-(\w+)/.exec(className || "");
@@ -99,7 +92,7 @@ const AnswerItem = (props) => {
   };
 
   return (
-    <div className="mt-2 flex flex-col w-full mb-6 border-b border-gray-300">
+    <div className="mt-2 flex flex-col w-full mb-6 border-b border-gray-300 bg-gray-800">
       {!clicked && (
         <div className="flex pl-4 pt-4">
           <div className="flex flex-col items-center pt-2 ">
@@ -141,7 +134,7 @@ const AnswerItem = (props) => {
               </button>
             )}
           </div>
-          <div className="flex flex-col justify-between w-full text-left pl-2 mb-2">
+          <div className="flex flex-col justify-between w-full text-left pl-2 mb-2 text-white">
             <div id="answer-desc" className="pb-14 whitespace-pre-line">
               <ReactMarkdown
                 components={components}
@@ -154,12 +147,12 @@ const AnswerItem = (props) => {
               <div className="text-base">
                 {answer && user && user._id === answer.author._id && (
                   <button onClick={editClickHandler}>
-                    <span className="text-gray-400">edit</span>
+                    <span className="flex items-center p-2 m-1 mt-3 border-2 border-blue-700 rounded text-white">edit</span>
                   </button>
                 )}
                 {answer && user && user._id === answer.author._id && (
                   <button onClick={deleteAnswerHandler}>
-                    <span className="text-red-500 ml-2">delete</span>
+                    <span className="flex items-center p-2 m-1 mt-3 border-2 border-red-700 rounded text-white">delete</span>
                   </button>
                 )}
               </div>

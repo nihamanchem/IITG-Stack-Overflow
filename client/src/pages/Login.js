@@ -22,7 +22,7 @@ const Login = () => {
 				<div className="flex flex-col justify-center items-center h-screen">
 				<a href="/"><Logo /></a>
 				<Card type="Log in" />
-				<span>Don’t have an account?<Link to="/register"><span className="text-blue-500"> Sign up</span></Link></span>
+				<span style={{color:'white'}}>Don’t have an account?<Link to="/register"><span className="text-blue-500"> Sign up</span></Link></span>
 			    </div>
 			}
 		</React.Fragment>

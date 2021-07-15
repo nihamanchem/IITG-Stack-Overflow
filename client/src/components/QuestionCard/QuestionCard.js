@@ -50,40 +50,31 @@ const QuestionCard = () => {
   };
 
   return (
-    <div className="w-4/6 h-screen">
+    <div className="w-5/6 h-screen">
       <Alert />
-      <div className="bg-white w-full rounded shadow-md border border-gray-300">
+      <div className="bg-grey-800 w-full rounded shadow-md border border-gray-300">
         <form className="flex flex-col p-4">
-          <label className="text-left ml-2 font-medium">Title</label>
-          <label className="text-left text-xs ml-2">
-            Be specific and imagine you're asking the question to another person
-          </label>
+          <label className="text-left ml-2 font-medium text-white">Title</label>
           <div className="mx-2">
             <input
               onChange={onChangeTitle}
               type="text"
-              placeholder="eg. is there an R function for finding the index of an element in a vector ?"
               className="placeholder-gray-400 w-full h-8 border mt-1  border-gray-300 p-3 text-sm rounded focus:border-blue-300 outline-none"
             />
           </div>
-          <label className="text-left ml-2 mt-3 font-medium ">Body</label>
-          <label className="text-left text-xs ml-2">
-            Include all the information someone would need to answer your
-            question
-          </label>
-          <div className="mx-2">
+          <label className="text-left ml-2 mt-3 font-medium text-white">Body</label>
+                    <div className="mx-2">
             <textarea
               onChange={onChangeBody}
               type="text"
               className="placeholder-gray-400  w-full h-64 border text-sm mt-1 border-gray-300 p-3 rounded focus:border-blue-300 outline-none"
             />
           </div>
-          <label className="text-left ml-2 mt-3 font-medium ">Tags</label>
+          <label className="text-left ml-2 mt-3 font-medium text-white">Tags</label>
           <div className="mx-2">
             <input
               onChange={onChangeTags}
               type="text"
-              placeholder="eg. css html javascript"
               className="placeholder-gray-400 w-full h-8 border mt-1 border-gray-300 p-3 text-sm rounded focus:border-blue-300 outline-none"
             />
           </div>
