@@ -6,6 +6,8 @@ import {
 } from "../../../redux/actions";
 import moment from "moment";
 import { UpArrowInactive, UpArrowActive } from "../../../assets/svg/UpArrow";
+import Pencil from "../../../assets/svg/Pencil";
+import Delete from "../../../assets/svg/Delete";
 import {
   DownArrowInactive,
   DownArrowActive,
@@ -187,12 +189,12 @@ const QuestionSection = (props) => {
                     {/*TODO: authenticate user first */}
                     {user && question.author._id === user._id && (
                       <button onClick={editClickHandler}>
-                        <span className="text-gray-400">edit</span>
+                        <Pencil/>
                       </button>
                     )}
                     {user && question.author._id === user._id && (
                       <button onClick={questionDeleteHandler}>
-                        <span className="text-red-500 ml-2">delete</span>
+                        <Delete/>
                       </button>
                     )}
                   </div>
