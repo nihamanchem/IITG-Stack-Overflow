@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { UpArrowInactive, UpArrowActive } from "../../../assets/svg/UpArrow";
-import {
-  DownArrowInactive,
-  DownArrowActive,
-} from "../../../assets/svg/DownArrow";
+import { DownArrowInactive, DownArrowActive } from "../../../assets/svg/DownArrow";
 import moment from "moment";
 import {Link} from "react-router-dom"
 import { EditAnswer } from "./EditAnswer";
@@ -14,10 +11,6 @@ import { useDispatch } from "react-redux";
 import { setAlert } from "../../../redux/actions";
 import { deleteAnswerAction, getAnswers } from "../../../redux/actions";
 
-// import ReactMarkdown from "react-markdown";
-
-// REMOVE IF ERROR:
-/* Use `…/dist/cjs/…` if you’re not in ESM! */
 const components = {
   code({ node, inline, className, children, ...props }) {
     const match = /language-(\w+)/.exec(className || "");
@@ -154,12 +147,12 @@ const AnswerItem = (props) => {
               <div className="text-base">
                 {answer && user && user._id === answer.author._id && (
                   <button onClick={editClickHandler}>
-                    <span className="text-gray-400">edit</span>
+                    <span className="flex items-center p-2 m-1 mt-3 border-2 border-blue-700 rounded text-black">edit</span>
                   </button>
                 )}
                 {answer && user && user._id === answer.author._id && (
                   <button onClick={deleteAnswerHandler}>
-                    <span className="text-red-500 ml-2">delete</span>
+                    <span className="flex items-center p-2 m-1 mt-3 border-2 border-red-700 rounded text-black">delete</span>
                   </button>
                 )}
               </div>

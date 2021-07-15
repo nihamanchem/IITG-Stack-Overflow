@@ -1,25 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  getQuestionAction,
-  questionDeleteAction,
-} from "../../../redux/actions";
+import { getQuestionAction, questionDeleteAction } from "../../../redux/actions";
 import moment from "moment";
 import { UpArrowInactive, UpArrowActive } from "../../../assets/svg/UpArrow";
-import {
-  DownArrowInactive,
-  DownArrowActive,
-} from "../../../assets/svg/DownArrow";
+import { DownArrowInactive, DownArrowActive } from "../../../assets/svg/DownArrow";
 import { useHistory, Link } from "react-router-dom";
 import EditQuestion from "./EditQuestion";
 import { setAlert } from "../../../redux/actions";
 import { voteQAPI } from "../../../api";
-
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import ReactMarkdown from "react-markdown";
 
-// REMOVE IF ERROR:
-/* Use `…/dist/cjs/…` if you’re not in ESM! */
+
 const components = {
   code({ node, inline, className, children, ...props }) {
     const match = /language-(\w+)/.exec(className || "");
@@ -184,15 +176,14 @@ const QuestionSection = (props) => {
                     ))}
                   </div>
                   <div className="pt-2">
-                    {/*TODO: authenticate user first */}
                     {user && question.author._id === user._id && (
                       <button onClick={editClickHandler}>
-                        <span className="text-gray-400">edit</span>
+                        <span className="flex items-center p-2 m-1 mt-3 border-2 border-blue-700 rounded text-black">edit</span>
                       </button>
                     )}
                     {user && question.author._id === user._id && (
                       <button onClick={questionDeleteHandler}>
-                        <span className="text-red-500 ml-2">delete</span>
+                        <span className="flex items-center p-2 m-1 mt-3 border-2 border-red-700 rounded text-black">delete</span>
                       </button>
                     )}
                   </div>

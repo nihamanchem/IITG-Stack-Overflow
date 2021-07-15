@@ -22,7 +22,6 @@ const SearchResults = (props) => {
 
   return (
     <>
-      {/* {loading && <Spinner />} */}
       {!localLoading && visibleQues && (
         <div className="flex flex-col mt-16 mb-10 w-screen">
           <div className="flex justify-between items-center py-4 px-8">

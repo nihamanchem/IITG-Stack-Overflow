@@ -55,7 +55,7 @@ const Card = (props) => {
       <div className="flex flex-col rounded w-96 px-5 bg-white py-10 m-10" 
       style={{ boxShadow: "0 10px 25px rgb(0,0,0,5%), 0 20px 48px rgb(0,0,0,5%), 0 1px 4px rgb(0,0,0,10%)" }}>
         {location.pathname === "/register" && ( <label className="text-left ml-2 mt-1 font-medium font-sans BlinkMacSystemFont">Username</label> )}
-        {location.pathname === "/register" && ( <input id="displayName" type="text" value={name} required
+        {location.pathname === "/register" && ( <input id="displayName" type="text" required
             className="p-2 m-2 mt-1 rounded border-2 focus:border-blue-300 outline-none"
             onChange={setNameChange}/>
         )}

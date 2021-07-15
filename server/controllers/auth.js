@@ -11,6 +11,7 @@ module.exports.register = async (req, res) => {
     return res.status(200).json({ message: "Success", data: { user, token, isAuthenticated: true, } });
   } 
   catch (error) {
+    console.log(error);
     return res.status(400).json({ message: "User already registered", error: error });
   }
 };
