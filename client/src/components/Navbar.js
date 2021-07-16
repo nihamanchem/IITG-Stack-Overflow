@@ -1,10 +1,10 @@
 import React, {useState} from "react";
-// import Logo from "../assets/svg/Logo";
 import { NavLink, useHistory, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../redux/actions";
 import companyLogo from '../assets/logo.png';
-const Navbar = () => {
+
+const NavBar = () => {
   const { isAuthenticated, user } = useSelector((state) => state.auth);
   const { loading } = useSelector((state) => state.loading);
   const history = useHistory();
@@ -61,4 +61,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;

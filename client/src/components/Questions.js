@@ -1,22 +1,19 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import QuestionItem from "../QuestionItem/QuestionItem";
-import Spinner from "../Spinner";
-import { NavLink } from "react-router-dom";
-import { getQuestionsAction, getTopQuestionsAction } from "../../redux/actions";
-import Nothing from "../../assets/svg/Nothing";
 import { useLocation } from "react-router";
+import { NavLink } from "react-router-dom";
+import EachQuestion from "./EachQuestion";
+import Spinner from "./Spinner";
+import { getQuestionsAction, getTopQuestionsAction } from "../redux/actions";
 
-const QuestionDisplay = (props) => {
+const Questions = (props) => {
   const { questions, loading } = useSelector((state) => state.question);
   const dispatch = useDispatch();
   const location = useLocation()
 
   useEffect(() => {
-    if(location.pathname==='/')
-      dispatch(getTopQuestionsAction());
-    else
-      dispatch(getQuestionsAction());
+    if(location.pathname==='/') dispatch(getTopQuestionsAction());
+    else dispatch(getQuestionsAction());
   }, [dispatch, location.pathname]);
 
   return (
@@ -33,25 +30,15 @@ const QuestionDisplay = (props) => {
             </NavLink>
           </div>
           {questions && questions.length === 0 && (
-            <>
-              <p className="mt-16 text-lg">No questions to show.</p>
-              <div>
-                <Nothing />
-              </div>
-            </>
+            <><p className="mt-16 text-lg text-white">No questions to show</p></>
           )}
-          {questions && questions.length > 0 &&
-            questions.map((question) => (
-              <QuestionItem
-                key={question._id}
-                data={question}
-                loading={loading}
-              />
-            ))}
+          {questions && questions.length > 0 && questions.map((question) => (
+            <EachQuestion key={question._id} data={question} loading={loading} />
+          ))}
         </div>
       )}
     </>
   );
 };
 
-export default QuestionDisplay;
+export default Questions;

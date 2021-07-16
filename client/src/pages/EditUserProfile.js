@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { setAlert } from "../../redux/actions";
-import Alert from "../../components/Alert";
-import { updateUserAPI } from "../../api";
+import { setAlert } from "../redux/actions";
+import Alert from "../components/Alert";
+import { updateUserAPI } from "../api";
 
-const EditProfileCard = (props) => {
+const EditUserProfile = (props) => {
 	const editClickHandler = props.editClickHandler;
 	const dispatch = useDispatch();
 	const user = props.user;
@@ -79,4 +79,4 @@ const EditProfileCard = (props) => {
 	);
 };
 
-export default EditProfileCard;
+export default EditUserProfile;

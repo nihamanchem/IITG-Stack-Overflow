@@ -1,16 +1,10 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
-
-import { 
-  setAlert, 
-  setLoadingAction, 
-  stopLoadingAction, 
-  register, 
-  login } from "../redux/actions";
+import { setAlert, setLoadingAction, stopLoadingAction, register, login } from "../redux/actions";
 
 
-const Card = (props) => {
+const AuthCard = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -73,4 +67,4 @@ const Card = (props) => {
   );
 };
 
-export default Card;
+export default AuthCard;

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import SearchItem from "./SearchItem";
-import Spinner from "../../components/Spinner";
+import Spinner from "../components/Spinner";
 import { NavLink } from "react-router-dom";
-import Nothing from "../../assets/svg/Nothing";
 
 const SearchResults = (props) => {
     const url = props.url;
@@ -23,7 +22,7 @@ const SearchResults = (props) => {
   return (
     <>
       {!localLoading && visibleQues && (
-        <div className="flex flex-col mt-16 mb-10 w-screen bg-gray-800">
+        <div className="flex flex-col mt-16 mb-10 w-screen" style={{ backgroundColor: "rgb(50, 50, 50)"}}>
           <div className="flex justify-between items-center py-4 px-8">
             <h1 className="text-2xl font-semibold" style={{color:'white'}}>Search Results</h1>
             <NavLink to="/question/ask">
@@ -33,12 +32,7 @@ const SearchResults = (props) => {
             </NavLink>
           </div>
           {visibleQues && visibleQues.length === 0 && (
-            <>
-              <p className="mt-16 text-lg">No questions to show.</p>
-              <div>
-                <Nothing />
-              </div>
-            </>
+            <><p className="mt-16 text-lg text-white">No questions to show</p></>
           )}
           {visibleQues && visibleQues.length > 0 &&
             visibleQues.map((question) => (

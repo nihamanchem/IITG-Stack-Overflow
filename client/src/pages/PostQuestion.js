@@ -1,5 +1,5 @@
 import React from "react";
-import QuestionCard from "../components/QuestionCard/QuestionCard";
+import QuestionCard from "../components/QuestionCard";
 import Alert from "../components/Alert";
 import { useHistory } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
