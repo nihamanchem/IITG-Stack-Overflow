@@ -105,7 +105,6 @@ const QuestionSection = (props) => {
                   {question.title}
                 </div>
                 <div className="text-xs text-right text-gray-500">
-                  Asked &nbsp;
                   {moment(question.createdAt).format("lll")}
                 </div>
               </div>

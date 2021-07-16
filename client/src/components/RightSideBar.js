@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { getTopTags } from "../../api";
+import React from "react";
+import { useSelector } from "react-redux";
+import { useEffect, useState } from "react";
+import { getTopTags } from "../api";
 
 const TopTags = () => {
   const [topTags, setTopTags] = useState([]);
@@ -31,4 +33,19 @@ const TopTags = () => {
     </div>
   );
 };
-export default TopTags;
+
+const RightSideBar = (props) => {
+  const { loading } = useSelector((state) => state.question);
+
+  return (
+    <>
+      {!loading && (
+        <div className="flex flex-col w-1/3 ml-10 mr-10 mt-16" style={{ backgroundColor: "rgb(50, 50, 50)"}}>
+          <TopTags />
+        </div>
+      )}
+    </>
+  );
+};
+
+export default RightSideBar;

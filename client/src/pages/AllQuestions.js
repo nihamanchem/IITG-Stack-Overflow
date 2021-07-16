@@ -1,7 +1,7 @@
 import React from "react";
 import Alert from "../components/Alert";
 import LeftSideBar from "../components/LeftSideBar";
-import RightSideBar from "../components/RightSideBar/RightSideBar";
+import RightSideBar from "../components/RightSideBar";
 import QuestionDisplay from "../components/Question/QuestionDisplay";
 import { useState } from "react";
 
