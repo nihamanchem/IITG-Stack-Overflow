@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "../components/Card";
+import AuthCard from "../components/AuthCard";
 import { Link, useHistory } from "react-router-dom";
-import Logo from "../assets/svg/Overflow";
+import Logo from "../assets/svg/StackOverflow";
 import Alert from "../components/Alert";
 import { useSelector } from "react-redux";
 import Spinner from "../components/Spinner";
@@ -21,7 +21,7 @@ const Register = () => {
       {!loading && 
         <div className="flex flex-col justify-center items-center h-screen">
         <a href="/"><Logo /></a>
-        <Card type="Sign up" />
+        <AuthCard type="Sign up" />
         <span style={{color:'white'}}>Already have an account?<Link to="/login"><span className="text-blue-500"> Login</span></Link></span>
         </div>
       }

@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import moment from "moment";
 
-const QuestionItem = (props) => {
+const UserQuestions = (props) => {
   const question = props.question;
   return (
     <div className="border-b border-gray-300 py-2 text-left flex justify-between items-center">
@@ -13,28 +13,16 @@ const QuestionItem = (props) => {
         <NavLink to={`/question/${question._id}`}>
           <div className=" w-full text-blue-400 hover:text-blue-200">
             {question.title.length > 115 ? (
-              <span>
-                {question.title.substring(
-                  0,
-                  Math.min(question.title.length, 115)
-                )}...
-              </span>
+              <span>{question.title.substring(0, Math.min(question.title.length, 115))}...</span>
             ) : (
-              <span>
-                {question.title.substring(
-                  0,
-                  Math.min(question.title.length, 115)
-                )}
-              </span>
+              <span>{question.title.substring(0, Math.min(question.title.length, 115))}</span>
             )}
           </div>
         </NavLink>
       </div>
-      <div className="text-gray-500">
-        {moment(question.createdAt).fromNow()}
-      </div>
+      <div className="text-gray-500">{moment(question.createdAt).fromNow()}</div>
     </div>
   );
 };
 
-export default QuestionItem;
+export default UserQuestions;

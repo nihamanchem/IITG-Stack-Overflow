@@ -1,8 +1,8 @@
 import React from "react";
 import Alert from "../components/Alert";
-import LeftSideBar from "../components/LeftSideBar";
-import RightSideBar from "../components/RightSideBar";
-import QuestionDisplay from "../components/Question/QuestionDisplay";
+import LeftSide from "../components/LeftSide";
+import RightSide from "../components/RightSide";
+import Questions from "../components/Questions";
 import { useState } from "react";
 
 const Home = () => {
@@ -14,10 +14,10 @@ const Home = () => {
     <React.Fragment>
       <div className="min-h-screen " style={{ backgroundColor: "rgb(50, 50, 50)"}}>
       <Alert />
-      <LeftSideBar />
+      <LeftSide />
       <div className="flex flex-row pl-72" style={{ backgroundColor: "rgb(50, 50, 50)"}}>
-        <QuestionDisplay tagsArray={tagsArray}  title="Top Questions"/>
-        <RightSideBar getTags={getTags} />
+        <Questions tagsArray={tagsArray}  title="Top Questions"/>
+        <RightSide getTags={getTags} />
       </div>
       </div>
     </React.Fragment>

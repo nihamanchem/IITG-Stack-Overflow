@@ -34,7 +34,7 @@ const TopTags = () => {
   );
 };
 
-const RightSideBar = (props) => {
+const RightSide = (props) => {
   const { loading } = useSelector((state) => state.question);
 
   return (
@@ -48,4 +48,4 @@ const RightSideBar = (props) => {
   );
 };
 
-export default RightSideBar;
+export default RightSide;

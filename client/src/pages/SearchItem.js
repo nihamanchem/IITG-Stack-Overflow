@@ -26,9 +26,7 @@ const SearchItem = (props) => {
           <div className="text-md semibold" style={{ color: "#0077CC" }}>
             <NavLink
               to={`/question/${question._id}`}
-              className="hover:text-blue-400"
-            >
-              {/*"overflow-ellipsis overflow-hidden inline-block max-h-12"*/}
+              className="hover:text-blue-400">
               <span>{question.title}</span>
             </NavLink>
           </div>

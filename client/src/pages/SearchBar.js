@@ -1,9 +1,9 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import SearchResults from "./SearchResults";
-import LeftSideBar from "../../components/LeftSideBar"
+import LeftSide from "../components/LeftSide"
 
-const SearchBarScreen = () => {
+const SearchBar = () => {
   window.scrollTo(0, 0);
   const location = useLocation();
   const url = location.pathname.split("/")[2];
@@ -11,13 +11,10 @@ const SearchBarScreen = () => {
   return (
     <React.Fragment>
       <div className="min-h-screen" style={{ backgroundColor: "rgb(50, 50, 50)"}}>
-        <LeftSideBar />
-        <div className="flex flex-row pl-72">
-          <SearchResults url={url} />
-        </div>
+        <LeftSide />
+        <div className="flex flex-row pl-72"><SearchResults url={url} /></div>
       </div>
     </React.Fragment>
   );
 };
-export default SearchBarScreen;
-
+export default SearchBar;

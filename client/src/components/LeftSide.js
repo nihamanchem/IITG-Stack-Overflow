@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const LeftSideBar = (props) => {
+const LeftSide = (props) => {
   return (
     <div className="w-72 fixed z-0 border-gray-300 border-r h-screen text-right pl-32 pt-20" style={{ backgroundColor: "rgb(40, 40, 40)" }}>
       <div className="my-2">
@@ -22,4 +22,4 @@ const LeftSideBar = (props) => {
   );
 };
 
-export default LeftSideBar;
+export default LeftSide;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import LeftSideBar from "../components/LeftSideBar";
+import LeftSide from "../components/LeftSide";
 import { getAllUsers } from "../api";
 import UserCard from "../components/UserCard";
 import { useDispatch } from "react-redux";
@@ -25,7 +25,7 @@ const Users = () => {
   return (
     <div className="min-h-screen" style={{ backgroundColor: "rgb(50, 50, 50)"}}>
       <div className="flex flex-row">
-        <LeftSideBar />
+        <LeftSide />
         <div className="mt-24 pl-72 text-left w-screen">
           <div className="text-3xl text-white pl-5 mb-10"> Users </div>
           <div className="items-center">
