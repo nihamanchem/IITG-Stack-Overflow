@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Navbar";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
