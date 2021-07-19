@@ -1,7 +1,19 @@
 # IITG-Stack-Overflow
-A question and answer to learn, share and discuss about problems
+A question & answer portal to learn, share and discuss about problems<br/>
+This is a MERN based web application where users can post general tech-related or any sort of queries and can answer others questions .<br />
 
 # Features and functionalities
+* User authentication 
+* Post questions and answers 
+* Upvote or Downvote questions & answers
+* Tags for organising questions
+* Search questions on the basis of question title & body
+
+Error management to prevent app crashes
+Toast notifications for actions: adding questions, deleting comments etc.
+Loading spinners for relevant fetching processes
+Formatted dates for adding/updating questions/answers/comments
+
 
 # ScreenShots
 * SignUp/LogIn<br/>
