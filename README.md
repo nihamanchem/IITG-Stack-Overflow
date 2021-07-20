@@ -29,7 +29,7 @@ This is a MERN based web application where users can post general tech-related o
 
 # Getting Started
 * clone this repo
-  * git clone https://github.com/shreya28302/IITG-Stack-Overflow.git
+  * git clone https://github.com/nihamanchem/IITG-Stack-Overflow.git
 * Start the server
   * cd server
   * npm install
