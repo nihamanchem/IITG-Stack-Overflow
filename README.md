@@ -1,5 +1,5 @@
 # IITG-Stack-Overflow
-A question and answer to learn, share and discuss about problems
+A question and answer to learn, share and discuss about problems.
 
 # Getting Started
 * clone this repo
