@@ -43,3 +43,6 @@ This is a MERN based web application where users can post general tech-related o
 * Node.js and Express
 * MongoDB
 
+Contributors
+* B Madhumitha
+* S Gandhi
