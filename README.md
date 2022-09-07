@@ -12,7 +12,6 @@ This is a MERN based web application where users can post general tech-related o
 * Loading spinners for relevant fetching processes
 * Formatted dates for adding or updating questions and answers
 
-
 # ScreenShots
 * SignUp/LogIn<br/>
 ![1](https://github.com/shreya28302/IITG-Stack-Overflow/blob/main/screenshots/1.png)
